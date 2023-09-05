@@ -1,0 +1,29 @@
+.ammo > .window-content-line > span
+{
+  min-width: 7.6rem;
+}
+
+.ammo input[type=text]
+{
+  margin-right: 0.75rem;
+}
+
+.ammo button
+{
+  cursor: pointer;
+}
+
+.ammo button input
+{
+  display: none;
+}
+
+.ammo > div:last-child
+{
+  margin-top: 1.5rem;
+}
+
+.ammo button:not(:last-child)
+{
+  margin-right: 0.75rem;
+}

@@ -1,0 +1,29 @@
+.strength > .window-content-line > span
+{
+  min-width: 5rem;
+}
+
+.strength textarea
+{
+  resize: none;
+}
+
+.strength button
+{
+  cursor: pointer;
+}
+
+.strength button input
+{
+  display: none;
+}
+
+.strength > div:last-child
+{
+  margin-top: 1.5rem;
+}
+
+.strength button:not(:last-child)
+{
+  margin-right: 0.75rem;
+}

@@ -1,0 +1,117 @@
+00FE30: Code that spawn things (Normal)
+00FCCC: ?
+00FEF4: Code that spawn things (Hogg)
+
+00FC2E: Stage Pointers Normal List Pointers
+07B37C: Stage Lock List Pointers
+07BF36: Stage Boss Helper List Pointers
+07BF56: Stage Boss Helper Normal List Pointers
+
+
+0ADBF2: 1st Stage Normal Object List Pointers
+0ADC52: First Enemy (16 bytes?) ?
+
+
+Objects in the normal list are 16 bytes, and the pattern is:
+
+TSTS B1 ?? OIOI PXPX PYPY AI SI DLDL DI IL
+
+TS: Trigger Spawn (It changes to frame delay if it is a lock).
+B?: Bit Based Data
+PX: Position X
+PY: Position Y
+OI: Object / Enemy ID
+DI: Drop ID, can be Treasure or Food
+AI: Action ID / Posture ID
+IL: Inteligence Level / Aggressiveness ?
+DL: Dinosaur Limit (Maximum position the dino will go until he gives up and leaves).
+SI: Sub Type ID (Example: Biker can be Ferris, Driver, Gneiss)
+B1: Left Digit is Player Amount Spawn Flag, 0 - Always, 4 - 2 Players, 6 - Players
+    Right Digit is Object Type (0 Enemies, 1 Others, 2 ?, 3 Barrels / Treasures)
+
+
+
+
+Enemy ID List
+
+0008: Bikers.         0 Ferris, 1 Driver, 2 Gneiss
+000C: Lash T.
+0010: Tyrog 1 3rd T.
+0014: Butcher.
+0018: Bludge.
+0028: Fats.           0 Hammer T., 1 Crash Game, 2 Blk Elmer, 3 Crash Game, 4 Wrench T.
+0034: Riflers.        0 Poacher J, 1 Poacher J, 2 Skinner, 3 Gutter.
+0038: Knivers.        0 Blade, 1 Razor.
+0048: Walther.        0 Vice, 2 Walther (Action, 0 Vice, 2 Walther).
+0050: Dwarves.        0 Punk, 1 Thug.
+0058: Dino Foot.      
+0060: Shivat.
+0064: Slice (Frozen).
+006C: Bikers (Frozen).
+0070: Small Dino (Unused?).
+0074: R Hopper.
+0078: Dino Steps?
+007C: Hogg.
+0080: Bike.
+008C: Morgan.
+0090: Morgan.
+0094: Pterodactyl (Unused?).
+009C: Fessenden (Frozen).
+00FC: Knivers.        0 Blade, 1 Razor? (They thrown knives and run away).
+0098: Mack.
+00A0: Morgue.
+00A8: Door.           8th Stage.
+00AC: Slice (Intro).
+00B0: Tiny Dino (Frozen).
+00B0: Tubes (Final Stage).
+00B4: Old Man (Dies).
+00BC: Tiny Dino 2 (Frozen).
+00CC: Butchered Dino.
+00D8: Walther (Frozen).
+00F4: Butcher
+0100: Dwarves         0 Punk, 1 Thug? (They throw grenades and dynamites?).
+0104: Barrel Rolling.
+0104: Barrels.        Wooden Barrels Falling.
+0108: Stone.          5th Stage Stone Falling.
+0118: Bikers.         (Riding a bike)
+011C: Slisaur
+0120: Tyrog 3rd.
+012C: Tyrog 1st.
+0130: Tyrog 1st.
+0138: Small Dino.
+013C: Fats.           (Beat the dinosaurs).
+0140: Small Dino 2.
+0144: Ending Car.
+0148: Zeke.
+0150: Fessenden 2nd.
+016C: Tyrog 2 (3rd)
+0178: Fessenden 1st.
+
+
+
+
+To Find
+
+Butcher
+Hogg
+Slice
+Morgan
+Morgue
+Tyrog
+Slisaur
+Fessenden 1st
+
+
+
+Enemy Groups
+
+Level 1:    9, 4
+Level 2:    18, 7
+Level 3:    27, 7
+Level 4:    18, 7
+Level 5:    21, 7
+Level 6:    21, 7
+Level 7:    34, 7
+Level 8:    37, 7
+
+

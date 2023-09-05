@@ -1,0 +1,40 @@
+Barbecue:   100
+Steak:      92
+
+Lobster:    86
+Sushi:      80
+
+Hamburger:  60
+Hotdog:     56
+Pizza:      52
+Salad:      48
+
+Ice Cream:  38
+Potato:     36
+Cake:       34
+Pudding:    32
+
+Grape:      26  (Fake)
+Apple:      24  (Fake)
+
+Croissant:  22
+Chocolate:  18
+Donut:      14
+Coffee:     10
+Gum:        08
+
+
+Barbecue    Steak       Lobster     Sushi                  
+0064  004C  0050  004C  0040  004C  0040  004C
+
+Hamburger   Hot-Dog     Pizza       Salad
+0030  0048  0030  0048  0030  0048  0020  0048
+
+Cake        Paffe       Pudding     Potato
+0020  0040  0020  0040  0020  0040  0020  0040
+
+Gum         Chocolate   Donut       Coffee
+0010  0038  0010  0038  0010  0038  0010  0038
+
+Croissant
+0010  0038  0024  0044  006E  007A  0086  0092

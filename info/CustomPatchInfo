@@ -1,0 +1,30 @@
+It must have the fields:
+
+  - key, a key that allows the patch to be identified.
+  - type, it will most of the time be "overwrite".
+  - filename, it must have the filename that the patch will be applied.
+  - priority, the insertion priority.
+
+
+There are other fields that can be added, they are:
+
+  - byteFormat, "hex" for hexadecimal bytes, anything else or nothing for decimal.
+  - data, the content the patch will insert.
+  - label, a label that will be used to display in the tool.
+  - text, a description that will be used to display in the tool.
+
+
+
+Template
+
+{
+  "key": "",
+  "priority": 250,
+  "type": "overwrite",
+  "filename": "cde_re.10f",
+  "byteFormat": "hex",
+  "data":
+  {
+    
+  }
+}

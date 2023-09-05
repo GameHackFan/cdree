@@ -1,0 +1,39 @@
+00:   Red             EE0000, FE00
+01:   Yellow          FFEE00, FFE0
+02:   Purple          990099, F909
+03:   Green           55EE55, F5E5
+04:   Blue            0000DD, F00D
+05:   Beige           EECCBB, FECB
+06:   Pink            EE44AA, FE4A
+07:   Light Blue      77CCFF, F7CF
+08:   Cyan            00AAAA, F0AA
+09:   Silver          556677, F567
+10:   Black           000000, F000
+11:   Sienna (Brown)  995533, F953
+12:   Orange          FF5511, FF51
+13:   Crimson         BB0033, FB03
+14:   Emerald Green   117755, F175
+15:   Purplish Blue   4422AA, F42A
+
+
+Enemy Lifebars
+
+D4 Value that is used to know the life bar
+00, 08, 10, 18, 20, 28, 30, 38, 40, 48, 50, ...
+
+Store D4 inside D5, shift right D5 by 2 bits to have the values below
+00, 02, 04, 06, 08, 0A, 0C, 0E, 10, 12, 14, 16, 18, 1A, 1B, 1C, ...
+
+
+
+Player Lifebars
+
+Pallete Color Codes, replace them with the code - MOVE.W ($7FE0, A5), ($2, A2)
+016474, 0164DC, 016518
+
+016456, 164E4
+180220
+181600
+
+
+64, C8, 12C, 190, 1F4, 258, 2BC, 320, 384, 3E8, 44C, 4B0, 514, 578, 5DC, 640, 6A4, 708, 76C, 7D0, 834, 898, 64
